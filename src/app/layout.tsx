@@ -3,7 +3,7 @@ import './globals.css';
 import { Navbar } from '@/components/ui/Navbar';
 import { Footer } from '@/components/ui/Footer';
 import { AdSenseScript, AdStickyBottom } from '@/components/ads';
-
+import { Analytics } from "@vercel/analytics/next"
 export const metadata: Metadata = {
   title: 'StreamHub — Watch Movies, TV Shows & Anime',
   description:
@@ -27,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
+        <Analytics/>
         <Footer />
         {/* Fixed 320×50 sticky banner shown only on mobile */}
         <AdStickyBottom />
