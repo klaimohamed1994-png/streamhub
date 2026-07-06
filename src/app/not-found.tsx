@@ -11,7 +11,7 @@ export default function NotFound() {
         404
       </h1>
       <p className="text-[#8888aa] mb-8 max-w-sm">
-        This page doesn't exist or the content could not be found.
+        This page doesn t exist or the content could not be found.
       </p>
       <Link
         href="/"

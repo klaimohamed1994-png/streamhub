@@ -80,7 +80,7 @@ export default async function MoviePage({ params }: Props) {
               {movie.title}
             </h1>
             {movie.tagline && (
-              <p className="text-[#8888aa] italic mb-3 text-sm">"{movie.tagline}"</p>
+              <p className="text-[#8888aa] italic mb-3 text-sm">{movie.tagline}</p>
             )}
 
             {/* Meta row */}

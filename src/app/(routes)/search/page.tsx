@@ -110,7 +110,7 @@ export default function SearchPage() {
 
       {query.trim() && !loading && filtered.length === 0 && (
         <div className="text-center py-20 text-[#8888aa]">
-          <p className="text-lg">No results for "<span className="text-white">{query}</span>"</p>
+          <p className="text-lg">No results for <span className="text-white">{query}</span></p>
         </div>
       )}
 
