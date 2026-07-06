@@ -25,7 +25,7 @@ import clsx from 'clsx';
 
 // ─── Ad format dimensions ─────────────────────────────────────────────────────
 
-const FORMAT_SIZES: Record<AdFormat, { width: number; height: number } | null> = {
+const FORMAT_SIZES = {
   auto: null,           // responsive — no fixed dimensions
   rectangle: { width: 300, height: 250 },   // medium rectangle
   leaderboard: { width: 728, height: 90 },  // leaderboard
@@ -39,7 +39,7 @@ const FORMAT_SIZES: Record<AdFormat, { width: number; height: number } | null> =
   in_feed: null,        // native — no fixed dimensions
   in_article: null,     // native — no fixed dimensions
   matched_content: null,
-};
+} as const;
 
 export type AdFormat = keyof typeof FORMAT_SIZES;
 

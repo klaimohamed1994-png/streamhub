@@ -40,7 +40,7 @@ export default async function MoviePage({ params }: Props) {
   const runtimeMin = movie.runtime ? movie.runtime % 60 : null;
   const director = movie.credits?.crew?.find((c) => c.job === 'Director');
   const cast = movie.credits?.cast?.slice(0, 8) ?? [];
-  const similar = (movie.recommendations?.results ?? movie.similar?.results ?? []).slice(0, 12) as TMDBSearchResult[];
+  const similar = (movie.recommendations?.results ?? movie.similar?.results ?? []).slice(0, 12) as unknown as TMDBSearchResult[];
 
   return (
     <div className="min-h-screen pt-16">
