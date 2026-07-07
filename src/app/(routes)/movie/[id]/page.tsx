@@ -18,12 +18,12 @@ export async function generateMetadata({ params }: Props) {
   try {
     const movie = await getMovie(Number(params.id));
     return {
-      title: `${movie.title} — StreamHub`,
+      title: `${movie.title} — StreamTN`,
       description: movie.overview,
       openGraph: { images: [tmdbBackdrop(movie.backdrop_path)] },
     };
   } catch {
-    return { title: 'Movie — StreamHub' };
+    return { title: 'Movie — StreamTN' };
   }
 }
 

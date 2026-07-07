@@ -10,12 +10,12 @@ export async function generateMetadata({ params }: Props) {
   try {
     const show = await getShow(Number(params.id));
     return {
-      title: `${show.name} — StreamHub`,
+      title: `${show.name} — StreamTN`,
       description: show.overview,
       openGraph: { images: [tmdbBackdrop(show.backdrop_path)] },
     };
   } catch {
-    return { title: 'TV Show — StreamHub' };
+    return { title: 'TV Show — StreamTN' };
   }
 }
 

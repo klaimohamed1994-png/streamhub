@@ -1,4 +1,4 @@
-# StreamHub
+# StreamTN
 
 A full-featured streaming platform built with **Next.js 14** that embeds movies, TV shows, and anime via the **VidNest API**. Content metadata is fetched from **TMDB** (The Movie Database) and **Anilist**.
 
@@ -23,7 +23,7 @@ A full-featured streaming platform built with **Next.js 14** that embeds movies,
 
 ```bash
 git clone <your-repo>
-cd streamhub
+cd streamTN
 npm install
 ```
 

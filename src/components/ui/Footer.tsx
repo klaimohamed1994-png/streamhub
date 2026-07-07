@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Film, Github } from 'lucide-react';
+import { Film } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -12,7 +12,7 @@ export function Footer() {
               <Film size={14} className="text-white" />
             </div>
             <span style={{ fontFamily: 'Sora, sans-serif' }} className="text-lg font-bold text-white">
-              Stream<span className="text-[#8b84ff]">Hub</span>
+              Stream<span className="text-[#8b84ff]">TN</span>
             </span>
           </Link>
 

@@ -53,7 +53,7 @@ export function Navbar() {
             style={{ fontFamily: 'Sora, sans-serif' }}
             className="text-xl font-bold text-white hidden sm:block"
           >
-            Stream<span className="text-[#8b84ff]">Hub</span>
+            Stream<span className="text-[#8b84ff]">TN</span>
           </span>
         </Link>
 

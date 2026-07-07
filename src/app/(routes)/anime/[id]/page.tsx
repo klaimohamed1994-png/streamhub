@@ -11,12 +11,12 @@ export async function generateMetadata({ params }: Props) {
     const anime = await getAnimeById(Number(params.id));
     const title = anime.title.english || anime.title.romaji;
     return {
-      title: `${title} — StreamHub`,
+      title: `${title} — StreamTN`,
       description: anime.description?.replace(/<[^>]*>/g, '').slice(0, 160),
       openGraph: { images: [anime.bannerImage || anime.coverImage.large] },
     };
   } catch {
-    return { title: 'Anime — StreamHub' };
+    return { title: 'Anime — StreamTN' };
   }
 }
 

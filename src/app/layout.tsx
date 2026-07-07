@@ -5,13 +5,13 @@ import { Footer } from '@/components/ui/Footer';
 import { AdSenseScript, AdStickyBottom } from '@/components/ads';
 import { Analytics } from "@vercel/analytics/next"
 export const metadata: Metadata = {
-  title: 'StreamHub — Watch Movies, TV Shows & Anime',
+  title: 'StreamTN — Watch Movies, TV Shows & Anime',
   description:
     'Stream movies, TV shows, and anime online for free. Powered by VidNest embed API with multiple server support.',
   keywords: ['streaming', 'movies', 'tv shows', 'anime', 'watch online', 'free'],
   openGraph: {
     type: 'website',
-    title: 'StreamHub',
+    title: 'StreamTN',
     description: 'Watch Movies, TV Shows & Anime Online',
     images: ['/og-image.jpg'],
   },
@@ -23,6 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Google AdSense — loaded after interactive, never blocks rendering */}
         <AdSenseScript />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4337784950654838"
+     crossOrigin="anonymous"></script>
         <meta name="google-adsense-account" content="ca-pub-4337784950654838"></meta>
       </head>
       <body className="min-h-screen flex flex-col">
