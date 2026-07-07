@@ -1,5 +1,5 @@
 'use client';
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /**
  * AdUnit — renders a single Google AdSense <ins> slot.
  *
