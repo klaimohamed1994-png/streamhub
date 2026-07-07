@@ -23,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Google AdSense — loaded after interactive, never blocks rendering */}
         <AdSenseScript />
+        <meta name="google-adsense-account" content="ca-pub-4337784950654838"></meta>
       </head>
       <body className="min-h-screen flex flex-col">
         <Navbar />
