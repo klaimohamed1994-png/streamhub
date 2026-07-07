@@ -78,11 +78,9 @@ export function AdUnit({
 
     try {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const adsbygoogle = (
-  window as Window & { adsbygoogle?: { push: (value: object) => void }[] }
-).adsbygoogle;
+      const adsbygoogle = (window as any).adsbygoogle;
       if (adsbygoogle) {
-        adsbygoogle.push();
+        adsbygoogle.push({});
         pushed.current = true;
       }
     } catch (err) {
