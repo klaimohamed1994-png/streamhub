@@ -26,19 +26,12 @@ export function Footer() {
 
           {/* Powered by */}
           <p className="text-xs text-[#8888aa] text-center">
-            Powered by{' '}
-            <a href="https://vidnest.fun" target="_blank" rel="noopener noreferrer" className="text-[#6c63ff] hover:underline">
-              VidNest
-            </a>{' '}
-            &{' '}
-            <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" className="text-[#6c63ff] hover:underline">
-              TMDB
-            </a>
+            Powered by med 
           </p>
         </div>
 
         <p className="text-center text-xs text-[#8888aa]/50 mt-6">
-          StreamHub does not host any content. All streams are provided by third-party embed providers.
+          
         </p>
       </div>
     </footer>

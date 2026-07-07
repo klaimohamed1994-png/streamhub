@@ -223,7 +223,7 @@ function PlayerShell({ url, server, onServerChange, label, onRestart }: PlayerSh
         </button>
 
         {/* Open in new tab */}
-        <a
+        {/* <a
           href={url}
           target="_blank"
           rel="noopener noreferrer"
@@ -231,7 +231,7 @@ function PlayerShell({ url, server, onServerChange, label, onRestart }: PlayerSh
           className="p-1.5 text-[#8888aa] hover:text-white bg-[#1a1a24] border border-[#2a2a3a] rounded-lg transition-all hover:border-[#6c63ff]/60"
         >
           <ExternalLink size={13} />
-        </a>
+        </a> */}
       </div>
 
       {/* iframe */}

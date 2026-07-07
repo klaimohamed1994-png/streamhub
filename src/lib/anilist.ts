@@ -31,9 +31,13 @@ async function anilistQuery<T>(query: string, variables: Record<string, unknown>
     next: { revalidate: 3600 },
   });
 
-  if (!res.ok) throw new Error(`Anilist API error: ${res.status}`);
+  if (!res.ok) {
+    console.error('Anilist API error');
+  };
   const json = await res.json();
-  if (json.errors) throw new Error(json.errors[0]?.message || 'Anilist GraphQL error');
+  if (json.errors) {
+    console.error('Anilist GraphQL errors');
+  }
   return json.data as T;
 }
 
