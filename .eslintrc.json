@@ -2,11 +2,5 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended"
-  ],
-  "plugins": ["@typescript-eslint"],
-  "parser": "@typescript-eslint/parser",
-  "rules": {
-    // You can explicitly disable the rule if you prefer:
-    "@typescript-eslint/no-explicit-any": "warn" // or "off"
-  }
+  ]
 }
